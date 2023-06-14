@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	".../model"
-	"./config"
+	"github.com/revjoshi/golang/config"
+	"github.com/revjoshi/golang/model"
 )
 
 // AllEmployee = Select Employee API

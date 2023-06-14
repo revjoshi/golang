@@ -5,10 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/cleverextechnology/crud/controller"
-
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
+	"github.com/revjoshi/golang/controller"
 )
 
 func main() {
