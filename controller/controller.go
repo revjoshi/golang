@@ -54,10 +54,11 @@ func InsertEmployee(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
+	id := r.FormValue("id")
 	name := r.FormValue("name")
 	city := r.FormValue("city")
 
-	_, err = db.Exec("INSERT INTO employee(name, city) VALUES(?, ?)", name, city)
+	_, err = db.Exec("INSERT INTO employee(id,name, city) VALUES(?, ?,?)", id, name, city)
 
 	if err != nil {
 		log.Print(err)
